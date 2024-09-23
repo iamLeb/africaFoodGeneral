@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+.shake-button {
+    animation: shake 0.9s ease-in-out infinite; /* Infinite shake animation */
+    animation-delay: 5s; /* Delay of 2 seconds between shakes */
+}
