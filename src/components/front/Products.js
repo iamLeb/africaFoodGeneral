@@ -258,5 +258,154 @@ export const Products = [
         title: 'Shortbread Butter Cookie',
         active: true,
         category: 'cookie'
-    },
+    },{
+        id: 37,
+        image: ['DSC00478.JPG', 'DSC00479.JPG', 'DSC00480.JPG'],
+        description:'',
+        title: 'Chin-Chin',
+        active: true,
+        category: 'snack'
+
+    },{
+        id: 38,
+        image: ['DSC00481.JPG', 'DSC00482.JPG', 'DSC00483.JPG'],
+        description:'',
+        title: 'Vita Malt',
+        active: true,
+        category: 'Liquid'
+
+    },{
+        id: 39,
+        image: ['DSC00484.JPG','DSC00485.JPG' ],
+        description:'',
+        title: 'Smoked Catfish',
+        active: true,
+        category: 'Fish'
+
+    },{
+        id: 40,
+        image: ['DSC00486.JPG','DSC00487.JPG' ],
+        description:'',
+        title: 'Dried-Fish',
+        active: true,
+        category: 'Fish'
+
+    },{
+        id: 41,
+        image: [ 'DSC00488.JPG','DSC00489.JPG'],
+        description:'',
+        title: 'Stock-Fish',
+        active: true,
+        category: 'Fish'
+
+    },{
+        id: 42,
+        image: [ 'DSC00490.JPG','DSC00491.JPG','DSC00492.JPG'],
+        description:'',
+        title: 'Yellow-Garri',
+        active: true,
+        category: 'Flakes'
+
+    },{
+        id: 43,
+        image: ['DSC00493.JPG','DSC00494.JPG','DSC00495.JPG','DSC00496.JPG','DSC00497.JPG','DSC00498.JPG', 'DSC00499.JPG','DSC00500.JPG'],
+        description:'',
+        title: 'White-Garri',
+        active: true,
+        category: 'Flakes'
+
+    },{
+        id: 44,
+        image: ['DSC00501.JPG'],
+        description:'',
+        title: 'Potato-Powder',
+        active: true,
+        category: 'Powder'
+
+    },{
+        id: 45,
+        image: ['DSC00502.JPG', 'DSC00503.JPG'],
+        description:'',
+        title: 'Curry Powder',
+        active: true,
+        category: 'Powder'
+
+    },{
+        id: 46,
+        image: ['DSC00504.JPG'],
+        description:'',
+        title: 'Jollof-Rice-Spice',
+        active: true,
+        category: 'Powder'
+
+    },{
+        id: 47,
+        image: ['DSC00505.JPG','DSC00506.JPG','DSC00507.JPG',],
+        description:'',
+        title: 'ToothBrush',
+        active: true,
+        category: 'Brush'
+    },{
+        id: 48,
+        image: ['DSC00508.JPG'],
+        description:'',
+        title: 'Sugar',
+        active: true,
+        category: 'Granules'
+    },{
+        id: 49,
+        image: ['DSC00509.JPG'],
+        description:'',
+        title: 'Oats',
+        active: true,
+        category: 'Oats'
+    },{
+        id: 50,
+        image: ['DSC00510.JPG'],
+        description:'',
+        title: 'Kellogs Fun-Pac',
+        active: true,
+        category: 'Flakes'
+    },{
+        id: 51,
+        image: ['DSC00511.JPG'],
+        description:'',
+        title: 'Coconut Sugar',
+        active: true,
+        category: 'Granules'
+    },{
+        id: 51,
+        image: ['DSC00512.JPG', 'DSC00513.JPG'],
+        description:'',
+        title: 'Honey',
+        active: true,
+        category: 'Jelly'
+    },{
+        id: 51,
+        image: ['DSC00514.JPG', 'DSC00515.JPG'],
+        description:'',
+        title: 'All Purpose Seasoning',
+        active: true,
+        category: 'Powder'
+    },{
+        id: 51,
+        image: ['DSC00516.JPG'],
+        description:'',
+        title: 'Steel Container',
+        active: true,
+        category: 'Container'
+    },{
+        id: 51,
+        image: ['DSC00517.JPG'],
+        description:'',
+        title: 'Tea Bags',
+        active: true,
+        category: 'Container'
+    }
+
+
+
+   
+
+
 ];
