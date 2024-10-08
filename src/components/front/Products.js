@@ -381,27 +381,373 @@ export const Products = [
         active: true,
         category: 'Jelly'
     },{
-        id: 51,
+        id: 52,
         image: ['DSC00514.JPG', 'DSC00515.JPG'],
         description:'',
         title: 'All Purpose Seasoning',
         active: true,
-        category: 'Powder'
+        category: 'powder'
     },{
-        id: 51,
+        id: 53,
         image: ['DSC00516.JPG'],
         description:'',
         title: 'Steel Container',
         active: true,
-        category: 'Container'
+        category: 'container'
     },{
-        id: 51,
-        image: ['DSC00517.JPG'],
+        id: 54,
+        image: ['DSC00517.JPG', 'DSC00518.JPG'],
         description:'',
         title: 'Tea Bags',
         active: true,
-        category: 'Container'
+        category: 'herbs'
+    },{
+        id: 55,
+        image: ['DSC00519.JPG', 'DSC00520.JPG'],
+        description:'',
+        title: 'Cowbell Coffee',
+        active: true,
+        category: 'powder'
+    },{
+        id: 56,
+        image: ['DSC00521.JPG'],
+        description:'',
+        title: 'Utazi Leaves',
+        active: true,
+        category: 'leaf'
+    },{
+        id: 57,
+        image: ['DSC00522.JPG'],
+        description:'',
+        title: 'Scent Leaves',
+        active: true,
+        category: 'leaf'
+    },{
+        id: 58,
+        image: ['DSC00523.JPG'],
+        description:'',
+        title: 'Bitter Leaves',
+        active: true,
+        category: 'leaf'
+    },{
+        id: 59,
+        image: ['DSC00524.JPG'],
+        description:'',
+        title: 'Whole Ogbono',
+        active: true,
+        category: 'seed'
+    },{
+        id: 60,
+        image: ['DSC00525.JPG'],
+        description:'',
+        title: 'Grind Shrimp',
+        active: true,
+        category: 'fish'
+    },{
+        id: 61,
+        image: ['DSC00526.JPG'],
+        description:'',
+        title: 'Whole Melon',
+        active: true,
+        category: 'seed'
+    },{
+        id: 62,
+        image: ['DSC00527.JPG'],
+        description:'',
+        title: 'Peanut Treaty',
+        active: true,
+        category: 'nut'
+    },{
+        id: 63,
+        image: ['DSC00529.JPG'],
+        description:'',
+        title: 'Burger Peanut',
+        active: true,
+        category: 'snack'
+    },{
+        id: 64,
+        image: ['DSC00530.JPG', 'DSC00531.JPG'],
+        description:'',
+        title: 'Mr Johns Plantain Chips',
+        active: true,
+        category: 'chips'
+    },{
+        id: 65,
+        image: ['DSC00532.JPG'],
+        description:'',
+        title: 'Goya Olive oil',
+        active: true,
+        category: 'oil'
+    },{
+        id: 66,
+        image: ['DSC00533.JPG'],
+        description:'',
+        title: 'Ofo Spices',
+        active: true,
+        category: 'powder'
+    },{
+        id: 67,
+        image: ['DSC00534.JPG'],
+        description:'',
+        title: 'Cocoyam Spices',
+        active: true,
+        category: 'powder'
+    },{
+        id: 68,
+        image: ['DSC00535.JPG'],
+        description:'',
+        title: 'Periwinkle',
+        active: true,
+        category: 'seafood'
+    },{
+        id: 69,
+        image: ['DSC00536.JPG'],
+        description:'',
+        title: 'Banga Spice',
+        active: true,
+        category: 'powder'
+    },{
+        id: 70,
+        image: ['DSC00537.JPG'],
+        description:'',
+        title: 'Ducros Dried Thyme',
+        active: true,
+        category: 'spice'
+    },{
+        id: 71,
+        image: ['DSC00538.JPG'],
+        description:'',
+        title: 'Ducros curry powder',
+        active: true,
+        category: 'spice'
+    },{
+        id: 72,
+        image: ['DSC00539.JPG', 'DSC00540.JPG'],
+        description:'',
+        title: 'Jollof Rice Spice',
+        active: true,
+        category: 'powder'
+    },{
+        id: 73,
+        image: ['DSC00541.JPG', 'DSC00542.JPG'],
+        description:'',
+        title: 'Frenchs Yellow Mustard',
+        active: true,
+        category: 'paste'
+    },{
+        id: 74,
+        image: ['DSC00543.JPG'],
+        description:'',
+        title: 'no name evaporated milk',
+        active: true,
+        category: 'liquid'
+    },{
+        id: 75,
+        image: ['DSC00544.JPG'],
+        description:'',
+        title: 'Pacific evaporated milk',
+        active: true,
+        category: 'liquid'
+    },{
+        id: 76,
+        image: ['DSC00545.JPG'],
+        description:'',
+        title: 'Carnation evaporated milk',
+        active: true,
+        category: 'liquid'
+    },{
+        id: 77,
+        image: ['DSC00546.JPG'],
+        description:'',
+        title: 'Empire Black Pepper',
+        active: true,
+        category: 'spice'
+    },{
+        id: 78,
+        image: ['DSC00547.JPG'],
+        description:'',
+        title: 'Empire Chicken Seasoning',
+        active: true,
+        category: 'powder'
+    },{
+        id: 79,
+        image: ['DSC00548.JPG'],
+        description:'',
+        title: 'Empire Bay Leaves',
+        active: true,
+        category: 'leaf'
+    },{
+        id: 80,
+        image: ['DSC00549.JPG'],
+        description:'',
+        title: 'Hellmanns Mayonnaise',
+        active: true,
+        category: 'spread'
+    },{
+        id: 81,
+        image: ['DSC00550.JPG', 'DSC00551.JPG'],
+        description:'',
+        title: 'Bulls Eye Barbecue Sauce',
+        active: true,
+        category: 'sauce'
+    },{
+        id: 82,
+        image: ['DSC00552.JPG', 'DSC00553.JPG', 'DSC00554.JPG'],
+        description:'',
+        title: 'Kraft Barbecue Sauce',
+        active: true,
+        category: 'sauce'
+    },{
+        id: 83,
+        image: ['DSC00555.JPG'],
+        description:'',
+        title: 'Hereford Corned Beef',
+        active: true,
+        category: 'meat'
+    },{
+        id: 84,
+        image: ['DSC00556.JPG'],
+        description:'',
+        title: 'Great Value Table Syrup',
+        active: true,
+        category: 'syrup'
+    },{
+        id: 85,
+        image: ['DSC00557.JPG'],
+        description:'',
+        title: 'Kraft Mayonnaise',
+        active: true,
+        category: 'spread'
+    },{
+        id: 86,
+        image: ['DSC00558.JPG'],
+        description:'',
+        title: 'Maltex',
+        active: true,
+        category: 'liquid'
+    },{
+        id: 87,
+        image: ['DSC00559.JPG'],
+        description:'',
+        title: 'Nescafe Rich',
+        active: true,
+        category: 'powder'
+    },{
+        id: 88,
+        image: ['DSC00560.JPG'],
+        description:'',
+        title: 'Aroy-D coconut milk',
+        active: true,
+        category: 'liquid'
+    },{
+        id: 89,
+        image: ['DSC00561.JPG'],
+        description:'',
+        title: 'Peak Evaporated Milk',
+        active: true,
+        category: 'liquid'
+    },{
+        id: 90,
+        image: ['DSC00562.JPG'],
+        description:'',
+        title: 'Ghana Fresh Palmnut Cream',
+        active: true,
+        category: 'paste'
+    },{
+        id: 91,
+        image: ['DSC00563.JPG'],
+        description:'',
+        title: 'Praise Palmnut Cream',
+        active: true,
+        category: 'paste'
+    },{
+        id: 92,
+        image: ['DSC00564.JPG'],
+        description:'',
+        title: 'Folgers Coffee',
+        active: true,
+        category: 'powder'
+    },{
+        id: 93,
+        image: ['DSC00565.JPG', 'DSC00566.JPG'],
+        description:'',
+        title: 'Tasty Tom Jollof Mix',
+        active: true,
+        category: 'paste'
+    },{
+        id: 94,
+        image: ['DSC00567.JPG'],
+        description:'',
+        title: 'Green Coffee Bean',
+        active: true,
+        category: 'seed'
+    },{
+        id: 95,
+        image: ['DSC00568.JPG', 'DSC00569.JPG', 'DSC00571.JPG'],
+        description:'',
+        title: 'Spicity Seasoning Powder',
+        active: true,
+        category: 'powder'
+    },{
+        id: 95,
+        image: ['DSC00572.JPG'],
+        description:'',
+        title: 'Malta Guiness',
+        active: true,
+        category: 'liquid'
+    },{
+        id: 96,
+        image: ['DSC00573.JPG'],
+        description:'',
+        title: 'Maltina Classic',
+        active: true,
+        category: 'liquid'
+    },{
+        id: 97,
+        image: ['DSC00574.JPG', 'DSC00575.JPG'],
+        description:'',
+        title: 'Emu - Palm Wine',
+        active: true,
+        category: 'liquid'
+    },{
+        id: 98,
+        image: ['DSC00576.JPG'],
+        description:'',
+        title: 'Knorr Chicken Seasoning',
+        active: true,
+        category: 'powder'
+    },{
+        id: 99,
+        image: ['DSC00577.JPG'],
+        description:'',
+        title: 'Dettol Antiseptic',
+        active: true,
+        category: 'liquid'
+    },{
+        id: 100,
+        image: ['DSC00578.JPG'],
+        description:'',
+        title: 'Pearl Milling Pancake Mix',
+        active: true,
+        category: 'powder'
+    },{
+        id: 101,
+        image: ['DSC00579.JPG'],
+        description:'',
+        title: 'Tropiway Plantain Fufu',
+        active: true,
+        category: 'powder'
     }
+
+
+
+
+
+
+
+
+
+
 
 
 
