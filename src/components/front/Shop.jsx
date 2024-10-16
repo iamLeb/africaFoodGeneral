@@ -118,7 +118,7 @@ const Shop = () => {
                                 className="border border-gray-300 rounded-lg p-2 w-full"
                             >
                                 <option value="all">All Categories</option>
-                                <option value="Powder">Electronics</option>
+                                <option value="Powder">Powder</option>
                                 <option value="Oil">Oil</option>
                                 <option value="Chops">Chops</option>
                                 <option value="Rice">Rice</option>
@@ -178,18 +178,48 @@ const Shop = () => {
 
                         {/* Pagination */}
                         {filteredProducts.length > productsPerPage && (
-                            <div className="flex justify-center mt-8">
-                                {Array.from({ length: totalPages }, (_, index) => (
-                                    <button
-                                        key={index}
-                                        onClick={() => handlePageChange(index + 1)}
-                                        className={`mx-1 px-3 py-2 border rounded-lg ${currentPage === index + 1 ? 'bg-[#7cc24e] text-white' : 'bg-white text-gray-700 hover:bg-gray-200'}`}
-                                    >
-                                        {index + 1}
-                                    </button>
-                                ))}
+                            <div className="flex justify-center mt-8 space-x-2">
+                                {/* Previous Button */}
+                                <button
+                                    onClick={() => handlePageChange(currentPage - 1)}
+                                    className={`px-3 py-2 border rounded-lg ${currentPage === 1 ? 'bg-gray-300 text-gray-500' : 'bg-white text-gray-700 hover:bg-gray-200'}`}
+                                    disabled={currentPage === 1}
+                                >
+                                    Previous
+                                </button>
+
+                                {/* Pagination Numbers */}
+                                {Array.from({ length: totalPages }, (_, index) => {
+                                    const pageNumber = index + 1;
+                                    const startPage = Math.max(1, currentPage - 2); // Calculate the first page to show
+                                    const endPage = Math.min(totalPages, currentPage + 2); // Calculate the last page to show
+
+                                    if (pageNumber >= startPage && pageNumber <= endPage) {
+                                        return (
+                                            <button
+                                                key={pageNumber}
+                                                onClick={() => handlePageChange(pageNumber)}
+                                                className={`mx-1 px-3 py-2 border rounded-lg ${currentPage === pageNumber ? 'bg-[#7cc24e] text-white' : 'bg-white text-gray-700 hover:bg-gray-200'}`}
+                                            >
+                                                {pageNumber}
+                                            </button>
+                                        );
+                                    }
+
+                                    return null; // Hide pages outside the range
+                                })}
+
+                                {/* Next Button */}
+                                <button
+                                    onClick={() => handlePageChange(currentPage + 1)}
+                                    className={`px-3 py-2 border rounded-lg ${currentPage === totalPages ? 'bg-gray-300 text-gray-500' : 'bg-white text-gray-700 hover:bg-gray-200'}`}
+                                    disabled={currentPage === totalPages}
+                                >
+                                    Next
+                                </button>
                             </div>
                         )}
+
                     </div>
                 </div>
             </div>

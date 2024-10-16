@@ -28,20 +28,6 @@ export const Products = [
         active: true,
         category: 'Powder'
     },{
-        id: 4,
-        image: ['DSC00386.JPG'],
-        description: 'Milo is a chocolate malt drink produced by Nestlé. It is fortified with vitamins and minerals, offering a nutritious energy boost when mixed with milk or water. Popular for its unique taste, Milo is enjoyed by both children and adults.',
-        title: 'Milo',
-        active: true,
-        category: 'Powder'
-    },{
-        id: 5,
-        image: ['DSC00387.JPG', 'DSC00388.JPG', 'DSC00389.JPG'],
-        description: 'Peak Milk is a rich and creamy dairy product made from high-quality cow\'s milk. It is fortified with essential vitamins and minerals, offering a nutritious option for drinking, cooking, or adding to beverages like tea and coffee.',
-        title: 'Peak Milk',
-        active: true,
-        category: 'Powder'
-    },{
         id: 6,
         image: ['DSC00392.JPG', 'DSC00393.JPG'],
         description: 'Nestlé Nido is a powdered milk brand designed for children and families. It’s enriched with essential nutrients like calcium, vitamins, and iron, supporting growth and development. Nido can be mixed with water to create a creamy, nutritious drink.',
