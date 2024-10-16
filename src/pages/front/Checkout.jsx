@@ -83,7 +83,7 @@ const Checkout = () => {
     
         // Check if the cart is empty
         if (cartItems.length === 0) {
-            notify("Your cart is empty. Please add items to the cart before placing an order.", { type: "error" });
+            notify("Your cart is empty. Please add items to the cart before placing an order.", {type: "error" });
             return;
         }
     
