@@ -13,7 +13,7 @@ const Checkout = () => {
     const [userProfile, setUserProfile] = useState(null); // State for storing user profile
     const [errors, setErrors] = useState({});
     const [showConfirmation, setShowConfirmation] = useState(false);
-    const [isMaintenance, setIsMaintenance] = useState(true); // New state for maintenance
+    const [isMaintenance, setIsMaintenance] = useState(false); // New state for maintenance
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -212,7 +212,7 @@ const Checkout = () => {
                                 <button
                                     type="submit"
                                     className="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition"
-                                    disabled={!isMaintenance}
+                                    disabled={isMaintenance}
                                 >
                                     Place Order
                                 </button>

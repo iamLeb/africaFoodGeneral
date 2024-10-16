@@ -32,7 +32,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className={'fixed flex flex-col gap-1 top-1/2 right-0 z-40'}>
+            <div className={'fixed flex flex-col gap-1 top-1/4 right-0 z-40'}>
                 <button
                     onClick={() => navigate(('/checkout'))}
                     className={'shake-button flex items-center space-x-6 px-2 md:px-5 bg-[#7cc24e] text-white py-2'}
