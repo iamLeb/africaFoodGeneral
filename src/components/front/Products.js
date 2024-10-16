@@ -28,13 +28,6 @@ export const Products = [
         active: true,
         category: 'Powder'
     },{
-        id: 6,
-        image: ['DSC00392.JPG', 'DSC00393.JPG'],
-        description: 'Nestlé Nido is a powdered milk brand designed for children and families. It’s enriched with essential nutrients like calcium, vitamins, and iron, supporting growth and development. Nido can be mixed with water to create a creamy, nutritious drink.',
-        title: 'Nestlé Nido',
-        active: true,
-        category: 'Powder'
-    },{
         id: 7,
         image: ['DSC00396.JPG'],
         description: 'Titus is a well-known brand of canned sardines, packed in oil or tomato sauce. It’s a rich source of protein, omega-3 fatty acids, and essential nutrients, commonly used in meals and snacks for its flavor and nutritional value.',
@@ -55,13 +48,6 @@ export const Products = [
         title: 'Banga Palm Oil',
         active: true,
         category: 'Oil'
-    },{
-        id: 10,
-        image: ['DSC00406.JPG'],
-        description: 'Golden Morn is a popular instant cereal made from maize and soya. It’s known for its smooth texture and nutritious content, offering a quick and easy breakfast option that’s enriched with vitamins and minerals.',
-        title: 'Golden Morn',
-        active: true,
-        category: 'Powder'
     },{
         id: 11,
         image: ['DSC00408.JPG'],
@@ -155,7 +141,14 @@ export const Products = [
         category: 'Powder'
     },{
         id: 24,
-        image: ['DSC00452.JPG', 'DSC00453.JPG', 'DSC00454.JPG', 'DSC00455.JPG'],
+        image: ['DSC00452.JPG', 'DSC00454.JPG'],
+        description: 'Plantain flour is a gluten-free flour made from dried plantains. It has a mild, slightly sweet flavor and can be used in baking or cooking. Plantain flour is a good alternative to traditional flours in recipes for bread, pancakes, and other baked goods, offering a nutritious option rich in fiber, vitamins, and minerals.',
+        title: 'Traditional Basmati Rice/Riz',
+        active: true,
+        category: 'Rice'
+    },{
+        id: 24,
+        image: ['DSC00455.JPG'],
         description: 'Plantain flour is a gluten-free flour made from dried plantains. It has a mild, slightly sweet flavor and can be used in baking or cooking. Plantain flour is a good alternative to traditional flours in recipes for bread, pancakes, and other baked goods, offering a nutritious option rich in fiber, vitamins, and minerals.',
         title: 'Basmati Rice/Riz',
         active: true,
@@ -286,19 +279,83 @@ export const Products = [
 
     },{
         id: 42,
-        image: [ 'DSC00490.JPG','DSC00491.JPG','DSC00492.JPG'],
+        image: [ 'DSC00490.JPG'],
         description:'',
-        title: 'Yellow-Garri',
+        title: 'Yellow-Garri 2LB',
         active: true,
-        category: 'Flakes'
+        category: 'Garri'
+
+    },{
+        id: 42,
+        image: [ 'DSC00491.JPG'],
+        description:'',
+        title: 'Yellow-Garri 10LB',
+        active: true,
+        category: 'Garri'
+
+    },{
+        id: 102,
+        image: ['DSC00492.JPG'],
+        description:'',
+        title: 'Yellow-Garri 20LB',
+        active: true,
+        category: 'Garri'
 
     },{
         id: 43,
         image: ['DSC00493.JPG','DSC00494.JPG','DSC00495.JPG','DSC00496.JPG','DSC00497.JPG','DSC00498.JPG', 'DSC00499.JPG','DSC00500.JPG'],
         description:'',
-        title: 'White-Garri',
+        title: 'Ijebu Garri 10LB',
         active: true,
-        category: 'Flakes'
+        category: 'Garri'
+
+    },{
+        id: 43,
+        image: ['DSC00494.JPG','DSC00495.JPG','DSC00496.JPG','DSC00497.JPG','DSC00498.JPG', 'DSC00499.JPG','DSC00500.JPG'],
+        description:'',
+        title: 'Ijebu Garri 2LB',
+        active: true,
+        category: 'Garri'
+
+    },{
+        id: 43,
+        image: ['DSC00495.JPG','DSC00496.JPG','DSC00497.JPG','DSC00498.JPG', 'DSC00499.JPG','DSC00500.JPG'],
+        description:'',
+        title: 'Ijebu Garri 5LB',
+        active: true,
+        category: 'Garri'
+
+    },{
+        id: 43,
+        image: ['DSC00496.JPG','DSC00497.JPG','DSC00498.JPG', 'DSC00499.JPG','DSC00500.JPG'],
+        description:'',
+        title: 'Ijebu Garri 20LB',
+        active: true,
+        category: 'Garri'
+
+    },{
+        id: 43,
+        image: ['DSC00498.JPG', 'DSC00499.JPG','DSC00500.JPG'],
+        description:'',
+        title: 'Regular Garri 2LB',
+        active: true,
+        category: 'Garri'
+
+    },{
+        id: 43,
+        image: ['DSC00499.JPG'],
+        description:'',
+        title: 'Regular Garri 5LB',
+        active: true,
+        category: 'Garri'
+
+    },{
+        id: 43,
+        image: ['DSC00500.JPG'],
+        description:'',
+        title: 'Regular Garri 10LB',
+        active: true,
+        category: 'Garri'
 
     },{
         id: 44,
