@@ -119,6 +119,9 @@ const Shop = () => {
                             >
                                 <option value="all">All Categories</option>
                                 <option value="Powder">Powder</option>
+                                <option value="Garri">Garri</option>
+                                <option value="Flour">Flour</option>
+                                <option value="spice">Spice</option>
                                 <option value="Oil">Oil</option>
                                 <option value="Chops">Chops</option>
                                 <option value="Rice">Rice</option>
@@ -128,6 +131,7 @@ const Shop = () => {
                                 <option value="Liquid">Liquid</option>
                                 <option value="Candy">Candy</option>
                                 <option value="cookie">cookie</option>
+                                <option value="Fish">Fish</option>
                                 {/* Add more categories as needed */}
                             </select>
                         </div>
@@ -224,7 +228,6 @@ const Shop = () => {
                 </div>
             </div>
 
-            {/* Modal for Quick Look */}
             {selectedProduct && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
                     <div className="bg-white rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3 p-6">
@@ -239,7 +242,7 @@ const Shop = () => {
                             <img
                                 ref={imageRef} // Reference for full-screen mode
                                 onClick={handleImageClick} // Click to go full-screen
-                                className="w-full h-64 object-cover rounded mb-4 cursor-pointer"
+                                className="w-full h-64 object-cover rounded mb-4 cursor-pointer transition duration-300"
                                 src={'https://arabicawhite.s3.amazonaws.com/afg/' + selectedProduct.image[currentImageIndex]}
                                 alt={selectedProduct.title}
                             />
@@ -248,7 +251,7 @@ const Shop = () => {
                             {selectedProduct.image.length > 1 && (
                                 <button
                                     onClick={handlePreviousImage}
-                                    className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+                                    className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition"
                                 >
                                     <MdArrowBack size={24} />
                                 </button>
@@ -258,7 +261,7 @@ const Shop = () => {
                             {selectedProduct.image.length > 1 && (
                                 <button
                                     onClick={handleNextImage}
-                                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+                                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition"
                                 >
                                     <MdArrowForward size={24} />
                                 </button>
@@ -285,6 +288,7 @@ const Shop = () => {
                     </div>
                 </div>
             )}
+
         </section>
     );
 };

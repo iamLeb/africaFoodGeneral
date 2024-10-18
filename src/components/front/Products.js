@@ -19,7 +19,7 @@ export const Products = [
         description: 'Lady B Custard is a popular brand of powdered custard mix, often used to create smooth, creamy desserts. It’s easy to prepare by mixing with milk and sugar, making it a quick and tasty treat for families.',
         title: 'Lady B Custard',
         active: true,
-        category: 'Powder'
+        category: 'Flour'
     },{
         id: 3,
         image: ['DSC00383.JPG', 'DSC00384.JPG', 'DSC00385.JPG'],
@@ -33,14 +33,21 @@ export const Products = [
         description: 'Titus is a well-known brand of canned sardines, packed in oil or tomato sauce. It’s a rich source of protein, omega-3 fatty acids, and essential nutrients, commonly used in meals and snacks for its flavor and nutritional value.',
         title: 'Titus',
         active: true,
-        category: 'Powder'
+        category: 'Fish'
     },{
         id: 8,
-        image: ['DSC00397.JPG', 'DSC00401.JPG'],
+        image: ['DSC00397.JPG'],
         description: 'Checkers Custard is a popular brand of ready-to-mix powdered custard, known for its smooth, creamy texture and sweet taste. It is often served as a dessert or snack and can be prepared easily by mixing with milk or water.',
-        title: 'Checkers Custard',
+        title: 'Checkers Milk Custard',
         active: true,
-        category: 'Powder'
+        category: 'Flour'
+    },{
+        id: 8,
+        image: ['DSC00401.JPG'],
+        description: 'Checkers Custard is a popular brand of ready-to-mix powdered custard, known for its smooth, creamy texture and sweet taste. It is often served as a dessert or snack and can be prepared easily by mixing with milk or water.',
+        title: 'Checkers Custard Flavor',
+        active: true,
+        category: 'Flour'
     },{
         id: 9,
         image: ['DSC00403.JPG', 'DSC00404.JPG'],
@@ -54,7 +61,7 @@ export const Products = [
         description: 'Grandios Pap is a brand of instant cereal made from maize, designed for a quick and nutritious breakfast. It’s often enjoyed with milk or water and is fortified with essential vitamins and minerals for a balanced start to the day.',
         title: 'Grandios Pap',
         active: true,
-        category: 'Powder'
+        category: 'Flour'
     },{
         id: 12,
         image: ['DSC00409.JPG'],
@@ -64,25 +71,32 @@ export const Products = [
         category: 'Chops'
     },{
         id: 13,
-        image: ['DSC00414.JPG', 'DSC00410.JPG', 'DSC00415.JPG'],
+        image: ['DSC00414.JPG'],
+        description: 'White Maize Powder Ogi, also known as Ogi or Pap, is a fermented cereal porridge made from white maize. It is a traditional breakfast food in West Africa, known for its smooth texture and mild flavor. Ogi is typically served with milk, sugar, or honey, and is valued for its nutritional benefits and easy digestibility.',
+        title: 'White Maize Powder Ogi (No Preservatives)',
+        active: true,
+        category: 'Flour'
+    },{
+        id: 13,
+        image: ['DSC00410.JPG', 'DSC00415.JPG'],
         description: 'White Maize Powder Ogi, also known as Ogi or Pap, is a fermented cereal porridge made from white maize. It is a traditional breakfast food in West Africa, known for its smooth texture and mild flavor. Ogi is typically served with milk, sugar, or honey, and is valued for its nutritional benefits and easy digestibility.',
         title: 'White Maize Powder Ogi',
         active: true,
-        category: 'Powder'
+        category: 'Flour'
     },{
         id: 14,
         image: ['DSC00418.JPG'],
         description: 'Star Maggi is a popular brand of seasoning cubes used in cooking. It enhances the flavor of dishes with a blend of spices, herbs, and salt. Commonly used in West African cuisine, it is known for adding rich taste and aroma to soups, stews, and other recipes.',
         title: 'Star Maggi',
         active: true,
-        category: 'Powder'
+        category: 'spice'
     },{
         id: 15,
         image: ['DSC00421.JPG', 'DSC00420.JPG', 'DSC00422.JPG'],
         description: 'Ola-Ola Pounded Yam (Iyan) is a brand of instant pounded yam flour. It is used to quickly prepare pounded yam, a staple West African dish made from yam tubers that are boiled, pounded, and served with soups or stews. The instant flour allows for a convenient and speedy preparation while maintaining the traditional taste and texture.',
         title: 'Ola-Ola Pounded Yam (Iyan)',
         active: true,
-        category: 'Powder'
+        category: 'Flour'
     },{
         id: 16,
         image: ['DSC00423.JPG', 'DSC00426.JPG'],
@@ -99,9 +113,16 @@ export const Products = [
         category: 'Beans'
     },{
         id: 18,
-        image: ['DSC00430.JPG', 'DSC00431.JPG', 'DSC00438.JPG', 'DSC00439.JPG'],
+        image: ['DSC00430.JPG', 'DSC00431.JPG'],
         description: 'Brown beans, often referred to as "brown beans" or "pinto beans" in some regions, are a type of legume with a rich, earthy flavor and a creamy texture when cooked. They are commonly used in a variety of dishes, including soups, stews, and chili. Brown beans are nutritious, providing a good source of protein, fiber, and essential nutrients.',
         title: 'Brown Beans',
+        active: true,
+        category: 'Beans'
+    },{
+        id: 18,
+        image: ['DSC00438.JPG', 'DSC00439.JPG'],
+        description: 'Brown beans, often referred to as "brown beans" or "pinto beans" in some regions, are a type of legume with a rich, earthy flavor and a creamy texture when cooked. They are commonly used in a variety of dishes, including soups, stews, and chili. Brown beans are nutritious, providing a good source of protein, fiber, and essential nutrients.',
+        title: 'Brown Beans (Oloyin)',
         active: true,
         category: 'Beans'
     },{
@@ -110,7 +131,7 @@ export const Products = [
         description: 'Cornmeal is a coarse flour made from dried corn kernels. It is commonly used in baking and cooking for dishes like cornbread, polenta, and muffins. It adds a slightly sweet, nutty flavor and a gritty texture to recipes. Cornmeal is available in various grinds, from fine to coarse, and is a staple in many cuisines.',
         title: 'Corn Meal',
         active: true,
-        category: 'Powder'
+        category: 'Flour'
     },{
         id: 20,
         image: ['DSC00435.JPG', 'DSC00436.JPG', 'DSC00437.JPG'],
@@ -124,21 +145,21 @@ export const Products = [
         description: 'Yam flour, also known as instant pounded yam flour, is a processed product made from dried yams. It is used to quickly prepare dishes like pounded yam, a traditional West African staple. The flour is mixed with water and cooked to create a smooth, dough-like consistency, often served with soups and stews.',
         title: 'Yam Flour',
         active: true,
-        category: 'Powder'
+        category: 'Flour'
     },{
         id: 22,
         image: ['DSC00445.JPG', 'DSC00447.JPG'],
         description: 'Cassava flour is a gluten-free flour made from the root of the cassava plant. It is versatile and can be used in baking or as a thickening agent in various dishes. Cassava flour has a mild flavor and is commonly used in gluten-free recipes, including bread, pastries, and pancakes.',
         title: 'Cassava Four',
         active: true,
-        category: 'Powder'
+        category: 'Flour'
     },{
         id: 23,
         image: ['DSC00448.JPG', 'DSC00449.JPG', 'DSC00450.JPG'],
         description: 'Plantain flour is a gluten-free flour made from dried plantains. It has a mild, slightly sweet flavor and can be used in baking or cooking. Plantain flour is a good alternative to traditional flours in recipes for bread, pancakes, and other baked goods, offering a nutritious option rich in fiber, vitamins, and minerals.',
         title: 'Plantain Four',
         active: true,
-        category: 'Powder'
+        category: 'Flour'
     },{
         id: 24,
         image: ['DSC00452.JPG', 'DSC00454.JPG'],
@@ -158,6 +179,13 @@ export const Products = [
         image: ['DSC00457.JPG', 'DSC00458.JPG', 'DSC00459.JPG', 'DSC00460.JPG', 'DSC00461.JPG'],
         description: 'Instant noodles are pre-cooked, dried noodles that come with seasoning packets for quick and easy preparation. Simply add hot water or cook briefly on the stove, and they are ready to eat in minutes. Instant noodles are a popular, convenient meal option available in various flavors and styles.',
         title: 'Indomie Instant Noodles',
+        active: true,
+        category: 'Noodles'
+    },{
+        id: 25,
+        image: ['DSC00460.JPG', 'DSC00461.JPG'],
+        description: 'Instant noodles are pre-cooked, dried noodles that come with seasoning packets for quick and easy preparation. Simply add hot water or cook briefly on the stove, and they are ready to eat in minutes. Instant noodles are a popular, convenient meal option available in various flavors and styles.',
+        title: 'Indomie Instant Noodles (Onion)',
         active: true,
         category: 'Noodles'
     },{
@@ -303,7 +331,7 @@ export const Products = [
 
     },{
         id: 43,
-        image: ['DSC00493.JPG','DSC00494.JPG','DSC00495.JPG','DSC00496.JPG','DSC00497.JPG','DSC00498.JPG', 'DSC00499.JPG','DSC00500.JPG'],
+        image: ['DSC00493.JPG'],
         description:'',
         title: 'Ijebu Garri 10LB',
         active: true,
@@ -311,7 +339,7 @@ export const Products = [
 
     },{
         id: 43,
-        image: ['DSC00494.JPG','DSC00495.JPG','DSC00496.JPG','DSC00497.JPG','DSC00498.JPG', 'DSC00499.JPG','DSC00500.JPG'],
+        image: ['DSC00494.JPG'],
         description:'',
         title: 'Ijebu Garri 2LB',
         active: true,
@@ -319,7 +347,7 @@ export const Products = [
 
     },{
         id: 43,
-        image: ['DSC00495.JPG','DSC00496.JPG','DSC00497.JPG','DSC00498.JPG', 'DSC00499.JPG','DSC00500.JPG'],
+        image: ['DSC00495.JPG'],
         description:'',
         title: 'Ijebu Garri 5LB',
         active: true,
@@ -327,7 +355,7 @@ export const Products = [
 
     },{
         id: 43,
-        image: ['DSC00496.JPG','DSC00497.JPG','DSC00498.JPG', 'DSC00499.JPG','DSC00500.JPG'],
+        image: ['DSC00496.JPG'],
         description:'',
         title: 'Ijebu Garri 20LB',
         active: true,
@@ -335,7 +363,7 @@ export const Products = [
 
     },{
         id: 43,
-        image: ['DSC00498.JPG', 'DSC00499.JPG','DSC00500.JPG'],
+        image: ['DSC00498.JPG'],
         description:'',
         title: 'Regular Garri 2LB',
         active: true,
@@ -363,7 +391,7 @@ export const Products = [
         description:'',
         title: 'Potato-Powder',
         active: true,
-        category: 'Powder'
+        category: 'Flour'
 
     },{
         id: 45,
@@ -371,7 +399,7 @@ export const Products = [
         description:'',
         title: 'Curry Powder',
         active: true,
-        category: 'Powder'
+        category: 'spice'
 
     },{
         id: 46,
@@ -379,7 +407,7 @@ export const Products = [
         description:'',
         title: 'Jollof-Rice-Spice',
         active: true,
-        category: 'Powder'
+        category: 'spice'
 
     },{
         id: 47,
@@ -422,7 +450,7 @@ export const Products = [
         description:'',
         title: 'Honey',
         active: true,
-        category: 'Jelly'
+        category: 'Honey'
     },{
         id: 52,
         image: ['DSC00514.JPG', 'DSC00515.JPG'],
@@ -439,11 +467,18 @@ export const Products = [
         category: 'container'
     },{
         id: 54,
-        image: ['DSC00517.JPG', 'DSC00518.JPG'],
+        image: ['DSC00517.JPG',],
         description:'',
-        title: 'Tea Bags',
+        title: 'Jamaican Herbal Tea Bissy',
         active: true,
-        category: 'herbs'
+        category: 'Tea'
+    },{
+        id: 54,
+        image: ['DSC00518.JPG'],
+        description:'',
+        title: 'Canasanta Jamaican Herbal Tea',
+        active: true,
+        category: 'Tea'
     },{
         id: 55,
         image: ['DSC00519.JPG', 'DSC00520.JPG'],
@@ -565,18 +600,18 @@ export const Products = [
         category: 'spice'
     },{
         id: 72,
-        image: ['DSC00539.JPG', 'DSC00540.JPG'],
+        image: ['DSC00540.JPG'],
         description:'',
         title: 'Jollof Rice Spice',
         active: true,
-        category: 'powder'
+        category: 'spice'
     },{
         id: 73,
         image: ['DSC00541.JPG', 'DSC00542.JPG'],
         description:'',
-        title: 'Frenchs Yellow Mustard',
+        title: 'French Classic Yellow Mustard Seed',
         active: true,
-        category: 'paste'
+        category: 'Seed'
     },{
         id: 74,
         image: ['DSC00543.JPG'],
@@ -628,16 +663,37 @@ export const Products = [
         category: 'spread'
     },{
         id: 81,
-        image: ['DSC00550.JPG', 'DSC00551.JPG'],
+        image: ['DSC00551.JPG'],
         description:'',
-        title: 'Bulls Eye Barbecue Sauce',
+        title: 'Bulls Eyes Old West Hickory',
+        active: true,
+        category: 'sauce'
+    },{
+        id: 81,
+        image: ['DSC00550.JPG'],
+        description:'',
+        title: 'Bulls Eye Guinness',
         active: true,
         category: 'sauce'
     },{
         id: 82,
-        image: ['DSC00552.JPG', 'DSC00553.JPG', 'DSC00554.JPG'],
+        image: ['DSC00552.JPG'],
         description:'',
-        title: 'Kraft Barbecue Sauce',
+        title: 'Kraft Barbecue Sauce Chicken N RIb',
+        active: true,
+        category: 'sauce'
+    },{
+        id: 82,
+        image: ['DSC00553.JPG'],
+        description:'',
+        title: 'Kraft Barbecue Sauce Hickory',
+        active: true,
+        category: 'sauce'
+    },{
+        id: 82,
+        image: ['DSC00554.JPG'],
+        description:'',
+        title: 'Kraft Barbecue Sauce Calorie-wise',
         active: true,
         category: 'sauce'
     },{
@@ -730,7 +786,7 @@ export const Products = [
         description:'',
         title: 'Spicity Seasoning Powder',
         active: true,
-        category: 'powder'
+        category: 'spice'
     },{
         id: 95,
         image: ['DSC00572.JPG'],
