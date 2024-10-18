@@ -118,15 +118,15 @@ const Shop = () => {
                                 className="border border-gray-300 rounded-lg p-2 w-full"
                             >
                                 <option value="all">All Categories</option>
-                                <option value="Powder">Powder</option>
+                                <option value="Rice">Rice</option>
+                                <option value="Beans">Beans</option>
                                 <option value="Garri">Garri</option>
+                                <option value="Powder">Powder</option>
+                                <option value="Noodles">Noodles</option>
                                 <option value="Flour">Flour</option>
                                 <option value="spice">Spice</option>
                                 <option value="Oil">Oil</option>
                                 <option value="Chops">Chops</option>
-                                <option value="Rice">Rice</option>
-                                <option value="Beans">Beans</option>
-                                <option value="Noodles">Noodles</option>
                                 <option value="Meat">Meat</option>
                                 <option value="Liquid">Liquid</option>
                                 <option value="Candy">Candy</option>
@@ -138,7 +138,7 @@ const Shop = () => {
 
                         {/* Commercial Space */}
                         <div className="bg-yellow-200 border border-yellow-400 rounded-lg p-4 mb-4">
-                            <h3 className="text-lg font-semibold mb-4">Special Offer!</h3>
+                        <h3 className="text-lg font-semibold mb-4">Special Offer!</h3>
                             <p className="text-gray-700">Check out our latest deals and promotions. Don't miss out!</p>
                             {/* Add more promotional content or images here */}
                         </div>
