@@ -5,11 +5,14 @@ import api from "../../services/api.js";
 
 const Checkout = () => {
     const [cartItems, setCartItems] = useState([]);
+
     const [formData, setFormData] = useState({
         fullName: "",
         email: "",
         address: "",
+        phone: "", // New phone number field
     });
+
     const [userProfile, setUserProfile] = useState(null); // State for storing user profile
     const [errors, setErrors] = useState({});
     const [showConfirmation, setShowConfirmation] = useState(false);
@@ -67,6 +70,14 @@ const Checkout = () => {
             newErrors.email = "Please enter a valid email address.";
             valid = false;
         }
+
+        // Phone number validation
+        const phonePattern = /^[0-9]{10,15}$/;
+        if (!phonePattern.test(formData.phone)) {
+            newErrors.phone = "Please enter a valid phone number (10-15 digits).";
+            valid = false;
+        }
+
 
         // Address validation
         if (formData.address.trim().length < 5) {
@@ -193,6 +204,24 @@ const Checkout = () => {
                                     />
                                     {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
                                 </div>
+
+                                <div className="mb-4">
+                                    <label htmlFor="phoneNumber" className="block text-gray-700">Phone Number</label>
+                                    <input
+                                        placeholder="Enter Phone Number"
+                                        type="tel"
+                                        id="phoneNumber"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleInputChange}
+                                        className={`w-full border border-gray-300 rounded-lg p-2 ${errors.phone ? 'border-red-500' : ''}`}
+                                        required
+                                        disabled={isMaintenance}
+                                    />
+                                    {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
+                                </div>
+
+
                                 <div className="mb-4">
                                     <label htmlFor="address" className="block text-gray-700">Delivery Address</label>
                                     <input
@@ -208,7 +237,7 @@ const Checkout = () => {
                                     />
                                     {errors.address && <p className="text-red-500 text-sm">{errors.address}</p>}
                                 </div>
-                                
+
                                 <button
                                     type="submit"
                                     className="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition"
