@@ -836,6 +836,268 @@ export const Products = [
         title: 'Tropiway Plantain Fufu',
         active: true,
         category: 'powder'
+    },{
+        id: 102,
+        image: [],
+        description: '',
+        title: 'Kpomo',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 103,
+        image: [],
+        description: '',
+        title: 'Beef Tribe',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 104,
+        image: [],
+        description: '',
+        title: 'Goat Meat',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 105,
+        image: [],
+        description: '',
+        title: 'Beat',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 106,
+        image: [],
+        description: '',
+        title: 'Cow Foot',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 107,
+        image: [],
+        description: '',
+        title: 'Smoked Turkey',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 108,
+        image: [],
+        description: '',
+        title: 'Cow Ear',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 109,
+        image: [],
+        description: '',
+        title: 'Smoked Turkey Drumstick',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 110,
+        image: [],
+        description: '',
+        title: 'Tail',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 111,
+        image: [],
+        description: '',
+        title: 'Fresh Turkey Tail',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 112,
+        image: [],
+        description: '',
+        title: 'Soft Chicken Drumstick',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 113,
+        image: [],
+        description: '',
+        title: 'Hard Old Chicken',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 114,
+        image: [],
+        description: '',
+        title: 'Chicken Old Layer',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 115,
+        image: [],
+        description: '',
+        title: 'Frozen Turkey Drumstick',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 116,
+        image: [],
+        description: '',
+        title: 'Frozen Wings',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 117,
+        image: [],
+        description: '',
+        title: 'Hard Chicken Wings',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 118,
+        image: [],
+        description: '',
+        title: 'Lamb Meat',
+        active: true,
+        category: 'Meat'
+    },
+    {
+        id: 119,
+        image: [],
+        description: '',
+        title: 'Soft Chicken Lap',
+        active: true,
+        category: 'Meat'
+    },{
+        id: 201,
+        image: [],
+        description: '',
+        title: 'Mackerel Single',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 202,
+        image: [],
+        description: '',
+        title: 'Mackerel Case',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 203,
+        image: [],
+        description: '',
+        title: 'Horse Mackerel Case and Single',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 204,
+        image: [],
+        description: '',
+        title: 'Croaker Fish',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 205,
+        image: [],
+        description: '',
+        title: 'Whitening',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 206,
+        image: [],
+        description: '',
+        title: 'Tilapia',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 207,
+        image: [],
+        description: '',
+        title: 'Cat Fish',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 208,
+        image: [],
+        description: '',
+        title: 'Smoked Cat Fish',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 209,
+        image: [],
+        description: '',
+        title: 'Fresh Cat Fish',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 210,
+        image: [],
+        description: '',
+        title: 'Mangala',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 211,
+        image: [],
+        description: '',
+        title: 'Baracoda',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 212,
+        image: [],
+        description: '',
+        title: 'Smoked Kpanla',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 213,
+        image: [],
+        description: '',
+        title: 'Salted Tilapia Fish',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 214,
+        image: [],
+        description: '',
+        title: 'Smoked Fresh Cat Fish',
+        active: true,
+        category: 'Fish'
+    },
+    {
+        id: 215,
+        image: [],
+        description: '',
+        title: 'Red Snapper',
+        active: true,
+        category: 'Fish'
     }
 
 

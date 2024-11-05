@@ -250,7 +250,10 @@ const Checkout = () => {
                     </div>
 
                     <div>
-                        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Order Summary</h2>
+                        <div className="pb-5">
+                            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Order Summary </h2>
+                            <p>Note: <small className="text-green-500 font-bold">You will be required to pay on delivery</small></p>
+                        </div>
                         <div className="bg-white p-6 rounded-lg shadow-md">
                             {cartItems.length > 0 ? (
                                 <>
@@ -270,7 +273,7 @@ const Checkout = () => {
                                                 </div>
                                             </div>
                                             <div>
-                                                <p className="text-lg text-gray-800 font-semibold">${item.price * item.quantity}</p>
+
                                                 <button
                                                     onClick={() => handleRemoveItem(item.id)}
                                                     className="text-red-500 hover:underline"
@@ -282,8 +285,8 @@ const Checkout = () => {
                                     ))}
                                     <hr className="my-4" />
                                     <div className="flex justify-between items-center">
-                                        <p className="text-lg font-semibold text-gray-800">Total Price:</p>
-                                        <p className="text-lg font-semibold text-gray-800">${getTotalPrice()}</p>
+                                        <p className="text-lg font-semibold text-gray-800">Total Quantity:</p>
+                                        <p className="text-lg font-semibold text-gray-800">{cartItems.length} {cartItems.length > 1 ? 'items': 'item'}</p>
                                     </div>
                                 </>
                             ) : (

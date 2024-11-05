@@ -132,6 +132,7 @@ const Shop = () => {
                                 <option value="Candy">Candy</option>
                                 <option value="cookie">cookie</option>
                                 <option value="Fish">Fish</option>
+                                <option value="Meat">Meat</option>
                                 {/* Add more categories as needed */}
                             </select>
                         </div>
