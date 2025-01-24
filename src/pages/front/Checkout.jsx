@@ -91,7 +91,6 @@ const Checkout = () => {
     const handleFormSubmit = async (e) => {
         e.preventDefault();
     
-        alert('submitted')
         // Check if the cart is empty
         if (cartItems.length === 0) {
             notify("Your cart is empty. Please add items to the cart before placing an order.", {type: "error" });
@@ -284,8 +283,8 @@ const Checkout = () => {
             {showConfirmation && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
                     <div className="flex flex-col bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto">
-                        <h2 className="text-2xl font-semibold mb-4">Thank You for Your Order!</h2>
-                        <p className="text-gray-700 mb-6">Your order has been placed successfully, Your delivery is on the way.</p>
+                        <h2 className="text-2xl font-semibold mb-4">Order Placed Successfully</h2>
+                        <p className="text-gray-700 mb-6">Your order has been placed, we will be contacting you soon for delivery</p>
                         <button
                             onClick={closePopup}
                             className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
