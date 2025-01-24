@@ -20,15 +20,15 @@ function App() {
     <ScrollToTop />
       <ToastContainer />
       <Routes>
-        {/* <Route path="/" element={<FrontLayout />}> */}
-          {/* <Route index element={<Home />} /> */}
-          <Route index element={<Maintenance />} />
-          {/* <Route path={'/about'} element={<About />} />
+        <Route path="/" element={<FrontLayout />}>
+          <Route index element={<Home />} />
+          {/* <Route index element={<Maintenance />} /> */}
+          <Route path={'/about'} element={<About />} />
           <Route path={'/contact'} element={<Contact />} />
           <Route path={'/cart'} element={<Cart />} />
           <Route path={'/checkout'} element={<Checkout />} />
-          <Route path={'/secure/login'} element={<Login />} /> */}
-        {/* </Route> */}
+          <Route path={'/secure/login'} element={<Login />} /> 
+        </Route>
 
         <Route path="/secure" element={<Dashboard />}>
           <Route index element={<Index />} />

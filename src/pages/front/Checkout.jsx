@@ -16,7 +16,6 @@ const Checkout = () => {
     const [userProfile, setUserProfile] = useState(null); // State for storing user profile
     const [errors, setErrors] = useState({});
     const [showConfirmation, setShowConfirmation] = useState(false);
-    const [isMaintenance, setIsMaintenance] = useState(false); // New state for maintenance
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -92,15 +91,10 @@ const Checkout = () => {
     const handleFormSubmit = async (e) => {
         e.preventDefault();
     
+        alert('submitted')
         // Check if the cart is empty
         if (cartItems.length === 0) {
             notify("Your cart is empty. Please add items to the cart before placing an order.", {type: "error" });
-            return;
-        }
-    
-        // Disable form submission if under maintenance
-        if (isMaintenance) {
-            notify("Checkout is currently under maintenance", { type: "warning" });
             return;
         }
     
@@ -150,11 +144,6 @@ const Checkout = () => {
                     </button>
                 </div>
 
-                {isMaintenance && (
-                    <div className="mb-6 text-red-500 text-center font-semibold">
-                        Checkout is currently under maintenance. Please try again later.
-                    </div>
-                )}
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div>
@@ -185,7 +174,6 @@ const Checkout = () => {
                                         onChange={handleInputChange}
                                         className={`w-full border border-gray-300 rounded-lg p-2 ${errors.fullName ? 'border-red-500' : ''}`}
                                         required
-                                        disabled={isMaintenance}
                                     />
                                     {errors.fullName && <p className="text-red-500 text-sm">{errors.fullName}</p>}
                                 </div>
@@ -200,7 +188,6 @@ const Checkout = () => {
                                         onChange={handleInputChange}
                                         className={`w-full border border-gray-300 rounded-lg p-2 ${errors.email ? 'border-red-500' : ''}`}
                                         required
-                                        disabled={isMaintenance}
                                     />
                                     {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
                                 </div>
@@ -216,7 +203,6 @@ const Checkout = () => {
                                         onChange={handleInputChange}
                                         className={`w-full border border-gray-300 rounded-lg p-2 ${errors.phone ? 'border-red-500' : ''}`}
                                         required
-                                        disabled={isMaintenance}
                                     />
                                     {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
                                 </div>
@@ -233,7 +219,6 @@ const Checkout = () => {
                                         onChange={handleInputChange}
                                         className={`w-full border border-gray-300 rounded-lg p-2 ${errors.address ? 'border-red-500' : ''}`}
                                         required
-                                        disabled={isMaintenance}
                                     />
                                     {errors.address && <p className="text-red-500 text-sm">{errors.address}</p>}
                                 </div>
@@ -241,7 +226,6 @@ const Checkout = () => {
                                 <button
                                     type="submit"
                                     className="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition"
-                                    disabled={isMaintenance}
                                 >
                                     Place Order
                                 </button>
