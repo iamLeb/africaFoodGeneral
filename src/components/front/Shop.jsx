@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { Products } from "./Products.js";
-import { MdOutlineRemoveRedEye, MdArrowForward, MdArrowBack, MdSearch, MdClose } from "react-icons/md";
+import { MdOutlineRemoveRedEye, MdArrowForward, MdArrowBack, MdSearch, MdClose, MdAdd, MdRemove } from "react-icons/md";
 import { notify } from '../../utils/Notify.js';
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -11,6 +11,7 @@ const Shop = () => {
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("all");
     const [isFilterOpen, setIsFilterOpen] = useState(false);
+    const [productQuantities, setProductQuantities] = useState({});
 
     const imageRef = useRef(null);
 
@@ -19,10 +20,22 @@ const Shop = () => {
     const handleQuickLook = (product) => {
         setSelectedProduct(product);
         setCurrentImageIndex(0);
+        // Initialize quantity for the selected product if not already set
+        if (!productQuantities[product.id]) {
+            setProductQuantities(prev => ({ ...prev, [product.id]: 1 }));
+        }
     };
 
     const closeModal = () => {
         setSelectedProduct(null);
+    };
+
+    const handleQuantityChange = (productId, change) => {
+        setProductQuantities(prev => {
+            const currentQuantity = prev[productId] || 1;
+            const newQuantity = Math.max(1, currentQuantity + change);
+            return { ...prev, [productId]: newQuantity };
+        });
     };
 
     const handleSearchChange = (event) => {
@@ -197,9 +210,26 @@ const Shop = () => {
                                         <div className="p-6">
                                             <h2 className="text-xl font-bold mb-2 text-gray-800">{product.title}</h2>
                                             <p className="text-gray-600 mb-4 line-clamp-2">{product.description}</p>
-                                            <div className="flex justify-end">
+                                            <div className="flex items-center justify-between">
+                                                <div className="flex items-center space-x-2">
+                                                    <button
+                                                        onClick={() => handleQuantityChange(product.id, -1)}
+                                                        className="p-1 rounded-full hover:bg-gray-100 transition-colors duration-300"
+                                                    >
+                                                        <MdRemove className="text-gray-600" />
+                                                    </button>
+                                                    <span className="text-gray-800 font-medium">
+                                                        {productQuantities[product.id] || 1}
+                                                    </span>
+                                                    <button
+                                                        onClick={() => handleQuantityChange(product.id, 1)}
+                                                        className="p-1 rounded-full hover:bg-gray-100 transition-colors duration-300"
+                                                    >
+                                                        <MdAdd className="text-gray-600" />
+                                                    </button>
+                                                </div>
                                                 <button
-                                                    onClick={() => handleAddToCart(product, 1)}
+                                                    onClick={() => handleAddToCart(product, productQuantities[product.id] || 1)}
                                                     className="bg-[#7cc24e] hover:bg-[#6baa42] text-white px-4 py-2 rounded-lg transition-colors duration-300"
                                                 >
                                                     Add to Cart
@@ -320,9 +350,26 @@ const Shop = () => {
 
                                 <div className="space-y-4">
                                     <p className="text-gray-600">{selectedProduct.description}</p>
-                                    <div className="flex justify-end">
+                                    <div className="flex items-center justify-between">
+                                        <div className="flex items-center space-x-4">
+                                            <button
+                                                onClick={() => handleQuantityChange(selectedProduct.id, -1)}
+                                                className="p-2 rounded-full hover:bg-gray-100 transition-colors duration-300"
+                                            >
+                                                <MdRemove className="text-gray-600 text-xl" />
+                                            </button>
+                                            <span className="text-xl font-medium text-gray-800">
+                                                {productQuantities[selectedProduct.id] || 1}
+                                            </span>
+                                            <button
+                                                onClick={() => handleQuantityChange(selectedProduct.id, 1)}
+                                                className="p-2 rounded-full hover:bg-gray-100 transition-colors duration-300"
+                                            >
+                                                <MdAdd className="text-gray-600 text-xl" />
+                                            </button>
+                                        </div>
                                         <button
-                                            onClick={() => handleAddToCart(selectedProduct, 1)}
+                                            onClick={() => handleAddToCart(selectedProduct, productQuantities[selectedProduct.id] || 1)}
                                             className="bg-[#7cc24e] hover:bg-[#6baa42] text-white px-6 py-3 rounded-lg transition-colors duration-300"
                                         >
                                             Add to Cart
