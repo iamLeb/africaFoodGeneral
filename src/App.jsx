@@ -11,7 +11,7 @@ import Contact from "./pages/front/Contact.jsx";
 import Login from "./pages/auth/Login.jsx";
 import Dashboard from "./layouts/Dashboard.jsx";
 import Index from "./pages/dashboard/Index.jsx";
-import Maintenance from "./pages/front/MaintenancePage.jsx";
+// import Maintenance from "./pages/front/MaintenancePage.jsx";
 
 function App() {
 
@@ -21,8 +21,8 @@ function App() {
       <ToastContainer />
       <Routes>
         <Route path="/" element={<FrontLayout />}>
-          {/* <Route index element={<Home />} /> */}
-          <Route index element={<Maintenance />} />
+          <Route index element={<Home />} />
+          {/* <Route index element={<Maintenance />} /> */}
           <Route path={'/about'} element={<About />} />
           <Route path={'/contact'} element={<Contact />} />
           <Route path={'/cart'} element={<Cart />} />
